@@ -1,5 +1,3 @@
 from django.db import models
 
-
-def Data():
-    pass
+# Create your models here.

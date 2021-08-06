@@ -12,9 +12,9 @@
   width: 700px;
   height: 700px;
 }
-#Dobong-gu {
+#도봉구 {
   transition: fill 1s ease-in-out;
 }
-#Dobong-gu:hover {
+#도봉구:hover {
   fill: blueviolet;
 }
