@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import os
 import requests
 from urllib.parse import urlencode, unquote
-from datetime import date, timedelta
+import urllib.request
 
 
 def get_data():
@@ -28,10 +28,10 @@ def get_data():
 
 
 def show_data(request):
-    pass
-    return render(request, "regions/dobonggu.html")
+    datas = get_data()
+
+    return render(request, "regions/dobonggu.html", context={"data": datas["도봉구"]})
 
 
 def home_view(request):
-    pass
     return render(request, "index.html")
