@@ -29,7 +29,7 @@ def get_data():
 
 def show_data(request):
     pass
-    return render(request, "templates/dobonggu.html")
+    return render(request, "regions/dobonggu.html")
 
 
 def home_view(request):
