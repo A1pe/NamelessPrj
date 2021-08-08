@@ -29,8 +29,10 @@ def get_data():
 
 def show_data(request):
     datas = get_data()
-
-    return render(request, "regions/dobonggu.html", context={"data": datas["도봉구"]})
+    area = request.path_info[9:-1]
+    return render(
+        request, "regions/result.html", context={"area": area, "data": datas[f"{area}"]}
+    )
 
 
 def home_view(request):
